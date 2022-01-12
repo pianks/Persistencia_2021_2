@@ -9,4 +9,5 @@ public interface DisciplinaDAO extends JpaRepository<Disciplina, Integer> {
 
     Disciplina findFistByid(int id);
 
+    Disciplina findFistByCodigo(String codigo);
 }

@@ -30,7 +30,4 @@ public class Aluno {
     @NonNull @Getter @Setter private String cpf;
     @NonNull @Getter @Setter private Date datanascimento;
 
-    @Transient
-    @NonNull @Getter @Setter private String[] disciplinascursadas;
-
 }

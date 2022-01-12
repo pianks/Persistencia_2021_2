@@ -8,13 +8,9 @@ import com.example.Trabalho_02.dao.DisciplinaDAO;
 import com.example.Trabalho_02.entity.Disciplina;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
 @ComponentScan("com.example.Trabalho_02")
 
 public class CrudDisciplina implements CommandLineRunner {
@@ -90,6 +86,8 @@ public class CrudDisciplina implements CommandLineRunner {
                 case '5':     // Exibir todos
                     listaDisciplinas(baseDisciplinas.findAll());
                     break;
+                case '6':
+
                 case '9':
                     break;
                 default:
